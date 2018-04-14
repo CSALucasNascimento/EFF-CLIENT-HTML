@@ -1,0 +1,49 @@
+:root {
+    --lighter-color:rgba(255,255,255,1);
+    --light-color:rgba(245,245,245,1);
+    --dark-color:rgba(191,191,191,1);
+    --darker-color:rgba(0,0,0,1);
+    --font: 'CenturyGothicRegular', sans-serif;
+    --gap: 30px;
+    --width-wrapper: minmax(auto, 1170px);
+}
+
+* {
+    box-sizing: border-box;
+    font-family: var(--font) !important;
+    margin: 0;
+    padding: 0;
+}
+
+*:focus {
+    outline: none;
+}
+
+html, body {
+    box-sizing: border-box;
+    font-family: var(--font);
+    font-size: 10pt;
+    font-weight: normal;
+    letter-spacing: 1pt;
+}
+
+h1 {font-size: 20pt}
+h2 {font-size: 15pt}
+h3 {font-size: 13pt}
+
+
+a {
+    text-decoration: none;
+}
+
+.w3-button {
+    width: fit-content;
+}
+
+.w3-button.btn-primary {
+    text-transform: uppercase;
+}
+
+.w3-button.btn-primary.btn-supper {
+    padding: auto 10px;
+}

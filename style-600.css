@@ -1,0 +1,127 @@
+@media (max-width: 600px) {
+    :root {
+        --gap: 15px;
+    }
+
+    /**
+    *
+    * HELPER
+    *
+    **/
+    .w3-hide-600 {
+        display: none !important;
+        visibility: hidden;
+    }
+    
+    .w3-show-600 {
+        display: auto !important;
+        visibility: visible;
+    }
+
+    /**
+    *
+    * NAVBAR
+    *
+    **/
+    .navbar .wrapper .inner {
+        grid-template-columns: calc(var(--gap) / 2) 1fr 1fr 1fr calc(var(--gap) / 2);
+        grid-template-areas: 
+        ". logo auth-menu burguer-menu ."
+    }
+
+    /**
+    *
+    * HEADER
+    *
+    **/
+    .main-header .wrapper .inner .showcase {
+        grid-column: 3 / 12;
+    }
+
+    /**
+    *
+    * SECTION-1
+    *
+    **/
+    .section-1 .wrapper .inner .how-it-works {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: var(--gap);
+        grid-column-gap: calc(var(--gap) * 4);
+    }
+
+    /**
+    *
+    * SECTION-2
+    *
+    **/
+    .section-2 .wrapper .inner {
+        grid-template-areas:
+        '. cta-1 cta-1 cta-1 cta-1 cta-1 cta-1 cta-1 cta-1 cta-1 cta-1 .'
+        '. cta-2 cta-2 cta-2 cta-2 cta-2 cta-2 cta-2 cta-2 cta-2 cta-2 .';
+        margin-top: calc(var(--gap) * -6);
+        grid-row-gap: calc(var(--gap) * 4);
+    }
+    
+    .section-2 .wrapper .inner .cta .img {
+        height: calc(var(--gap) * 20);
+        width: calc(var(--gap) * 20);
+    }
+
+    /**
+    *
+    * SECTION-3
+    *
+    **/
+    .section-3 .wrapper .inner .blog {
+        grid-template-columns: 1fr;
+    }
+
+    .section-3 .wrapper .inner .blog .card .info {
+        padding: calc(var(--gap) * 10);
+    }
+
+    /**
+    *
+    * SECTION 4
+    *
+    **/
+    .section-4 {
+        padding: calc(var(--gap) * 3) 0;
+    }
+
+    .section-4 .wrapper .inner header {
+        grid-column: 2 / 12;
+    }
+    
+    .section-4 .wrapper .inner form {
+        grid-column: 2 / 12;
+    }
+
+    /**
+    *
+    * FOOTER
+    *
+    **/
+    footer .wrapper .inner {
+        grid-template-columns: calc(var(--gap) * 2) 1fr 1fr calc(var(--gap) * 2);
+        grid-template-areas: 
+        ". f-section-1 f-section-2 ."
+        ". f-section-3 f-section-4 ."
+        ". f-section-5 f-section-6 ."
+        ". footer-nav footer-nav .";
+    }
+
+    footer .footer-nav {
+        grid-template-columns: calc(var(--gap) * 2) 1fr 1fr calc(var(--gap) * 2);
+        grid-template-areas: 
+        '. newsletter newsletter .' 
+        '. social-media social-media .'
+        '. copyright copyright .';
+        grid-row-gap: calc(var(--gap) * 2);
+    }
+
+    footer .footer-nav .social-media {
+        justify-self: center;
+    }
+    
+}

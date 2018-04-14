@@ -1,0 +1,58 @@
+/**
+*
+* NAVIGATION
+*
+**/
+
+.navbar {
+    padding: var(--gap) 0;
+}
+
+.navbar .wrapper .inner {
+    justify-items: center;
+    grid-template-areas: 
+    "logo logo logo main-menu main-menu main-menu main-menu main-menu main-menu auth-menu auth-menu auth-menu"
+}
+
+.navbar .logo {
+    grid-area: logo;
+}
+.navbar .logo img {
+    width: 80%;
+}
+.navbar .main-menu {
+    grid-area: main-menu;
+}
+.navbar .auth-menu {
+    grid-area: auth-menu;
+    justify-self: end;
+}
+.navbar .burguer-menu {
+    grid-area: burguer-menu;
+    justify-self: end;
+    display: none;
+    cursor: pointer;
+}
+.navbar a {
+    text-transform: uppercase;
+}
+
+.navbar .burguer-menu .bar1, .navbar .burguer-menu .bar2, .navbar .burguer-menu .bar3 {
+    width: 30px;
+    height: 3px;
+    background-color: var(--darker-color);
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.navbar .burguer-menu.animate .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-5px, 6px);
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.navbar .burguer-menu.animate .bar2 {opacity: 0;}
+
+.navbar .burguer-menu.animate .bar3 {
+    -webkit-transform: rotate(45deg) translate(-6px, -8px);
+    transform: rotate(45deg) translate(-6px, -8px);
+}

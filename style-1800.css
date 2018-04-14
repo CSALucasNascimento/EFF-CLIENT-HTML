@@ -1,0 +1,16 @@
+@media (max-width: 1800px) { 
+
+    /**
+    * HELPER
+    */
+    .w3-hide-1800 {
+        display: none !important;
+        visibility: hidden;
+    }
+    
+    .w3-show-1800 {
+        display: auto !important;
+        visibility: visible;
+    }
+
+}

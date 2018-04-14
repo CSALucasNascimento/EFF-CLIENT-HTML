@@ -1,0 +1,118 @@
+footer {
+    background-color: var(--dark-color);
+    padding: calc(var(--gap) * 2) 0;
+}
+
+footer .wrapper .inner {
+    grid-template-areas: 
+    "f-section-1 f-section-1 f-section-2 f-section-2 f-section-3 f-section-3 f-section-4 f-section-4 f-section-5 f-section-5 f-section-6 f-section-6"
+    "footer-nav footer-nav footer-nav footer-nav footer-nav footer-nav footer-nav footer-nav footer-nav footer-nav footer-nav footer-nav"
+}
+
+footer .wrapper .inner .f-section-1 {
+    grid-area: f-section-1;
+}
+footer .wrapper .inner .f-section-2 {
+    grid-area: f-section-2;
+}
+footer .wrapper .inner .f-section-3 {
+    grid-area: f-section-3;
+}
+footer .wrapper .inner .f-section-4 {
+    grid-area: f-section-4;
+}
+footer .wrapper .inner .f-section-5 {
+    grid-area: f-section-5;
+}
+footer .wrapper .inner .f-section-6 {
+    grid-area: f-section-6;
+}
+footer .wrapper .inner .footer-nav {
+    grid-area: footer-nav;
+}
+
+footer .logo {
+    margin-top: calc(var(--gap) / 4);
+}
+
+footer img {
+    width: 80%;
+}
+
+footer h3 {
+    color: var(--lighter-color);
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+footer .f-section {
+    display: flex;
+    flex-flow: column;
+}
+
+footer .wrapper .inner .f-section .section-links {
+    display: flex;
+    flex-flow: column;
+}
+
+footer .wrapper .inner .f-section .section-links a {
+    padding: calc(var(--gap) / 6) 0;
+}
+
+footer .footer-nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+    'newsletter copyright social-media';
+    align-items: end;
+}
+
+footer .footer-nav .newsletter {
+    grid-area: newsletter;
+}
+
+footer .footer-nav .copyright {
+    grid-area: copyright;
+    justify-self: center;
+}
+
+footer .footer-nav .social-media {
+    grid-area: social-media;
+    justify-self: end;
+}
+
+footer .footer-nav .newsletter h3 {
+    color: var(--darker-color);
+}
+
+footer .footer-nav form {
+    display: flex;
+    flex-flow: row;
+}
+
+footer .footer-nav form input,
+footer .footer-nav form button {
+    border: none;
+    min-height: 30px;
+    height: calc(var(--gap) * 1.3);
+}
+
+footer .footer-nav form input[type="text"] {
+    background-color: var(--lighter-color);
+    color: var(--darker-color);
+    padding: 0 var(--gap);
+    width: fit-content;
+}
+
+footer .footer-nav form button {
+    background-color: var(--darker-color);
+    color: var(--dark-color);
+    min-width: fit-content;
+    padding: 0 var(--gap);
+    text-transform: uppercase;
+    width: fit-content;
+}
+
+footer .footer-nav .social-media a{
+    margin-left: calc(var(--gap) / 2)
+}
