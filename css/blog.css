@@ -1,0 +1,105 @@
+/**
+*
+* SECTION 1
+*
+**/
+.section-1 {
+    text-align: center;
+    padding: calc(var(--gap) * 2) 0;
+}
+
+.section-1 .wrapper .inner header {
+    grid-column: 1 / 13;
+}
+
+.section-1 h1, .section-1 h2 {
+    text-transform: uppercase;
+}
+
+.section-1 .wrapper .inner .blog {
+    grid-column: 2 / 12;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: calc(var(--gap) / 2);
+}
+
+.section-1 .wrapper .inner .blog .card {
+    display: grid;
+    grid-template-rows: minmax(calc(var(--gap) * 10), auto);
+    overflow: hidden;
+}
+
+.section-1 .wrapper .inner .blog .card .img,
+.section-1 .wrapper .inner .blog .card .info {
+    grid-column: 1 /2;
+    grid-row: 1 / 2;
+}
+
+.section-1 .wrapper .inner .blog .card:hover .img {
+    transform: scale(1.2);
+    opacity: .5;
+}
+
+.section-1 .wrapper .inner .blog .card-1 .img{
+    background: url('../images/pages/home/EFF_Website_Blog_Image_01.jpg');
+}
+
+.section-1 .wrapper .inner .blog .card-2 .img{
+    background: url('../images/pages/home/EFF_Website_Blog_Image_02.png');
+}
+
+.section-1 .wrapper .inner .blog .card-3 .img{
+    background: url('../images/pages/home/EFF_Website_Blog_Image_03.jpg');
+}
+
+.section-1 .wrapper .inner .blog .card-4 .img{
+    background: url('../images/pages/home/EFF_Website_Blog_Image_04.jpg');
+}
+
+.section-1 .wrapper .inner .blog .card .img {
+    background-position: center;
+    background-size: cover;
+    transition: all 1000ms ease;
+}
+
+.section-1 .wrapper .inner .blog .card .info {
+    align-content: center;
+    display: grid;
+    grid-row-gap: calc(var(--gap) / 4);
+    justify-items: center;
+    opacity: 0;
+    padding: calc(var(--gap) * 6) calc(var(--gap) * 3);
+    transition: all 1000ms ease;
+}
+
+.section-1 .wrapper .inner .blog .card:hover .info {
+    opacity: 1;
+    z-index: 1;
+}
+
+.section-1 .wrapper .inner .see-more {
+    grid-column: 1 / 13;
+    text-decoration: underline;
+}
+
+@media (max-width: 1800px) { 
+    
+}
+
+@media (max-width: 1200px) {
+
+}
+
+@media (max-width: 900px) {
+    
+}
+
+@media (max-width: 600px) {
+   
+}
+
+@media (max-width: 415px) {
+    .section-1 .wrapper .inner .blog {
+        grid-template-columns: 1fr;
+    }
+}

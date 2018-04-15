@@ -1,0 +1,77 @@
+/**
+*
+* LAYOUT HELPERS
+*
+**/
+
+.main-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+}
+
+.main-container > * {
+    grid-column: 1 / 2;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: minmax(calc(var(--gap) / 8), auto) var(--width-wrapper) minmax(calc(var(--gap) / 8), auto);
+    grid-template-areas: 
+    ". inner .";
+
+    height: 100%;
+    width: 100%;
+}
+
+.wrapper > .inner {
+    display: grid;
+    grid-area: inner;
+    grid-gap: var(--gap);
+    grid-template-rows: auto;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+@media (max-width: 1800px) { 
+    .w3-hide-1800 {
+        display: none !important;
+        visibility: hidden;
+    }
+    .w3-show-1800 {
+        display: auto !important;
+        visibility: visible;
+    }
+}
+
+@media (max-width: 1200px) {
+    .w3-hide-1200 {
+        display: none !important;
+        visibility: hidden;
+    }
+    .w3-show-1200 {
+        display: auto !important;
+        visibility: visible;
+    }
+}
+
+@media (max-width: 900px) {
+    .w3-hide-900 {
+        display: none !important;
+        visibility: hidden;
+    }
+    .w3-show-900 {
+        display: auto !important;
+        visibility: visible;
+    }
+}
+
+@media (max-width: 600px) {
+    .w3-hide-600 {
+        display: none !important;
+        visibility: hidden;
+    }
+    .w3-show-600 {
+        display: auto !important;
+        visibility: visible;
+    }
+}

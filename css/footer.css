@@ -116,3 +116,43 @@ footer .footer-nav form button {
 footer .footer-nav .social-media a{
     margin-left: calc(var(--gap) / 2)
 }
+
+@media (max-width: 1800px) { 
+
+}
+
+@media (max-width: 1200px) {
+
+}
+
+@media (max-width: 900px) {
+    footer .wrapper .inner {
+        grid-template-columns: calc(var(--gap) * 2) 1fr 1fr 1fr calc(var(--gap) * 2);
+        grid-template-areas: 
+        ". f-section-1 f-section-2 f-section-3 ."
+        ". f-section-4 f-section-5 f-section-6 ."
+        ". footer-nav footer-nav footer-nav .";
+    }
+}
+
+@media (max-width: 600px) {
+    footer .wrapper .inner {
+        grid-template-columns: calc(var(--gap) * 2) 1fr 1fr calc(var(--gap) * 2);
+        grid-template-areas: 
+        ". f-section-1 f-section-2 ."
+        ". f-section-3 f-section-4 ."
+        ". f-section-5 f-section-6 ."
+        ". footer-nav footer-nav .";
+    }
+    footer .footer-nav {
+        grid-template-columns: calc(var(--gap) * 2) 1fr 1fr calc(var(--gap) * 2);
+        grid-template-areas: 
+        '. newsletter newsletter .' 
+        '. social-media social-media .'
+        '. copyright copyright .';
+        grid-row-gap: calc(var(--gap) * 2);
+    }
+    footer .footer-nav .social-media {
+        justify-self: center;
+    }
+}

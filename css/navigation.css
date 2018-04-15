@@ -56,3 +56,30 @@
     -webkit-transform: rotate(45deg) translate(-6px, -8px);
     transform: rotate(45deg) translate(-6px, -8px);
 }
+
+@media (max-width: 1800px) { 
+
+}
+
+@media (max-width: 1200px) {
+
+}
+
+@media (max-width: 900px) {
+    .navbar .wrapper .inner {
+        grid-template-columns: calc(var(--gap) * 2) 1fr 1fr 1fr 1fr calc(var(--gap) * 2);
+        grid-template-areas: 
+        ". logo . auth-menu burguer-menu ."
+    }
+    .navbar .burguer-menu {
+        display: inline-block;
+    }
+}
+
+@media (max-width: 600px) {
+    .navbar .wrapper .inner {
+        grid-template-columns: calc(var(--gap) / 2) 1fr 1fr 1fr calc(var(--gap) / 2);
+        grid-template-areas: 
+        ". logo auth-menu burguer-menu ."
+    }
+}
