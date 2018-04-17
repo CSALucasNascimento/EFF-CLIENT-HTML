@@ -1,0 +1,159 @@
+/**
+*
+* SECTION 1
+*
+**/
+.section-1 {
+    padding: calc(var(--gap) * 2) 0;
+}
+
+.section-1 .wrapper .inner {
+    grid-template-areas: 
+    'title title title . . . . . . . . .'
+    'form form form form form form form form form form form form'
+}
+
+.section-1 .wrapper .inner .title {
+    grid-area: title;
+    display: grid;
+    grid-row-gap: var(--gap);
+}
+
+.section-1 .wrapper .inner .title h2 {
+    text-transform: uppercase;
+}
+
+.section-1 .wrapper .inner .form {
+    grid-area: form;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: var(--gap);
+    grid-template-areas:
+    'required . .'
+    'frm-name frm-email frm-phone'
+    'frm-subject . .'
+    'frm-message frm-message frm-message'
+    'frm-select-hear . .'
+    'btn-submit . .'
+}
+
+.section-1 .wrapper .inner .form label {
+    display: block;
+}
+
+.section-1 .wrapper .inner .form input {
+    width: 100%;
+}
+
+.section-1 .wrapper .inner .form small {
+    grid-area: required
+}
+
+.section-1 .wrapper .inner .form .frm-name {
+    grid-area: frm-name
+}
+
+.section-1 .wrapper .inner .form .frm-email {
+    grid-area: frm-email
+}
+
+.section-1 .wrapper .inner .form .frm-phone {
+    grid-area: frm-phone
+}
+
+.section-1 .wrapper .inner .form .frm-subject {
+    grid-area: frm-subject
+}
+
+.section-1 .wrapper .inner .form .frm-message {
+    grid-area: frm-message
+}
+
+.section-1 .wrapper .inner .form .frm-select-hear {
+    grid-area: frm-select-hear
+}
+
+.section-1 .wrapper .inner .form .btn-submit {
+    grid-area: btn-submit
+}
+
+/**
+*
+* SECTION 2
+*
+**/
+.section-2 {
+    padding: calc(var(--gap) * 2) 0;
+}
+
+.section-2 .wrapper .inner {
+    grid-template-areas: 
+    'contact-section-1 contact-section-1 contact-section-1 contact-section-1 contact-section-2 contact-section-2 contact-section-2 contact-section-2 contact-section-3 contact-section-3 contact-section-3 contact-section-3';
+}
+
+.section-2 .wrapper .inner .contact-section {
+    display: grid;
+    grid-row-gap: calc(var(--gap) / 2); 
+}
+
+.section-2 .wrapper .inner .contact-section-1 {
+    grid-area: contact-section-1;
+}
+
+.section-2 .wrapper .inner .contact-section-2 {
+    grid-area: contact-section-2
+}
+
+.section-2 .wrapper .inner .contact-section-3 {
+    grid-area: contact-section-3
+}
+
+@media (max-width: 1800px) { 
+
+}
+
+@media (max-width: 1200px) {
+
+}
+
+@media (max-width: 900px) {
+    .section-1 .wrapper .inner {
+        grid-template-areas: 
+        '. title title title title title title title title title title .'
+        '. form form form form form form form form form form .'
+    }
+    .section-2 .wrapper .inner {
+        grid-template-areas: 
+        '. contact-section-1 contact-section-1 contact-section-1 contact-section-1 contact-section-1 contact-section-1 contact-section-3 contact-section-3 contact-section-3 contact-section-3 .'
+        '. contact-section-2 contact-section-2 contact-section-2 contact-section-2 contact-section-2 contact-section-2 contact-section-3 contact-section-3 contact-section-3 contact-section-3 .';
+    }
+}
+
+@media (max-width: 600px) {
+    .section-1 .wrapper .inner {
+        grid-template-areas: 
+        '. title title title title title title title title title title .'
+        '. form form form form form form form form form form .'
+    }
+    .section-1 .wrapper .inner .form {
+        grid-template-areas:
+        'required required required'
+        'frm-name frm-name frm-name'
+        'frm-email frm-email frm-email'
+        'frm-phone frm-phone frm-phone'
+        'frm-subject frm-subject frm-subject'
+        'frm-message frm-message frm-message'
+        'frm-select-hear frm-select-hear frm-select-hear'
+        'btn-submit btn-submit btn-submit'
+    }
+    .section-2 .wrapper .inner {
+        grid-template-areas: 
+        '. contact-section-1 contact-section-1 contact-section-1 contact-section-1 contact-section-1 contact-section-1 contact-section-1 contact-section-1 contact-section-1 contact-section-1 .'
+        '. contact-section-2 contact-section-2 contact-section-2 contact-section-2 contact-section-2 contact-section-2 contact-section-2 contact-section-2 contact-section-2 contact-section-2 .'
+        '. contact-section-3 contact-section-3 contact-section-3 contact-section-3 contact-section-3 contact-section-3 contact-section-3 contact-section-3 contact-section-3 contact-section-3 .';
+    }
+}
+
+@media (max-width: 400px) {
+
+}

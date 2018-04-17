@@ -2,3 +2,18 @@
     font-family: CenturyGothicRegular;
     src: url('../fonts/CenturyGothic.ttf');
 }
+@font-face {
+    font-family: CenturyGothicBold;
+    src: url('../fonts/CenturyGothicBold.ttf');
+}
+
+h1 { font-size: 20pt; line-height: 20pt; }
+h2 { font-size: 15pt; }
+h3 { font-size: 13pt; text-transform: uppercase; }
+h4 { font-size: 10pt; }
+caption { font-size: 8pt; }
+a { text-decoration: none; }
+
+body {
+	line-height: 200%;
+}

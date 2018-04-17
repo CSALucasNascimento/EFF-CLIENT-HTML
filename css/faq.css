@@ -1,0 +1,51 @@
+/**
+*
+* SECTION 1
+*
+**/
+.section-1 {
+    padding: calc(var(--gap) * 2) 0;
+}
+
+.section-1 .wrapper .inner header {
+    grid-column: 1 / 13;
+}
+
+.section-1 .wrapper .inner header h1 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.section-1 .wrapper .inner .faq {
+    grid-column: 2 / 12;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: calc(var(--gap) / 2);
+}
+
+.section-1 .wrapper .inner .faq .w3-card-body {
+    display: grid;
+    grid-row-gap: calc(var(--gap) / 4);
+}
+
+@media (max-width: 1800px) { 
+    
+}
+
+@media (max-width: 1200px) {
+
+}
+
+@media (max-width: 900px) {
+    
+}
+
+@media (max-width: 600px) {
+   
+}
+
+@media (max-width: 415px) {
+    .section-1 .wrapper .inner .blog {
+        grid-template-columns: 1fr;
+    }
+}

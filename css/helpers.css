@@ -32,6 +32,50 @@
     grid-template-columns: repeat(12, 1fr);
 }
 
+.w3-card {
+    border: 1px solid var(--light-color);
+    box-shadow: none;
+    display: grid;
+    grid-template-areas: 
+    'w3-card-header'
+    'w3-card-body'
+    'w3-card-footer';
+}
+
+.w3-card-header {
+    grid-area: w3-card-header;
+}
+
+.w3-card-body {
+    border-top: 1px solid var(--light-color);
+    border-bottom: 1px solid var(--light-color);
+    grid-area: w3-card-body;
+}
+
+.w3-card-footer {
+    grid-area: w3-card-footer;
+    padding: var(--gap);
+}
+
+.w3-card-header, .w3-card-footer, .w3-card-body {
+    padding: var(--gap);
+}
+
+/**
+*
+* FONTS
+*
+*/
+.f-100 { font-weight: 100; font-family: var(--font-regular);}
+.f-200 { font-weight: 200; font-family: var(--font-regular);}
+.f-300 { font-weight: 300; font-family: var(--font-regular);}
+.f-400 { font-weight: 400; font-family: var(--font-regular);}
+.f-500 { font-weight: 500; font-family: var(--font-regular);}
+.f-600 { font-weight: 600; font-family: var(--font-bold);}
+.f-700 { font-weight: 700; font-family: var(--font-bold);}
+.f-800 { font-weight: 800; font-family: var(--font-bold);}
+.f-900 { font-weight: 900; font-family: var(--font-bold);}
+
 @media (max-width: 1800px) { 
     .w3-hide-1800 {
         display: none !important;

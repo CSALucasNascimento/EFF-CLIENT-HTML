@@ -1,0 +1,97 @@
+/**
+*
+* SECTION 1
+*
+**/
+.section-1 {
+    padding: calc(var(--gap) * 2) 0;
+}
+
+.section-1 .wrapper .inner .story {
+    grid-column: 3 / 11;
+    text-align: center;
+    display: grid;
+    grid-row-gap: var(--gap);
+}
+
+.section-1 .wrapper .inner .story .imgs {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    align-items: end;
+}
+
+.section-1 .wrapper .inner .story .imgs .img-1 {
+    grid-column: 2 / 6;
+    grid-row: 1 / 2;
+    background: url('../images/pages/our-history/Eat-Fit-Food-2017-tile.jpg');
+    z-index: 1;
+}
+
+.section-1 .wrapper .inner .story .imgs .img-2 {
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+    background: url('../images/pages/our-history/Eat-Real-Food-NYC_Bondi-Watsons-Bay-Camp-Cove_by_Luisa-Brimble-316.jpg');
+}
+
+.section-1 .wrapper .inner .story .imgs .img-3 {
+    grid-column: 5 / 7;
+    grid-row: 1 / 2;
+    background: url('../images/pages/our-history/EFF-Autumn-Lifestyle_by_Luisa Brimble_668.jpg');
+}
+
+.section-1 .wrapper .inner .story .imgs .img {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    height: calc(var(--gap) * 9);
+}
+
+.section-1 .wrapper .inner .story .imgs .img.main {
+    height: calc(var(--gap) * 16);
+}
+
+
+.section-1 h1 {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+@media (max-width: 1800px) { 
+
+}
+
+@media (max-width: 1200px) {
+
+}
+
+@media (max-width: 900px) {
+
+    .section-1 .wrapper .inner .story {
+        grid-column: 2 / 12;
+    }
+    .section-1 .wrapper .inner .story .imgs .img {
+        height: calc(var(--gap) * 15);
+    }
+    .section-1 .wrapper .inner .story .imgs .img.main {
+        height: calc(var(--gap) * 30);
+    }
+}
+
+@media (max-width: 600px) {
+    .section-1 .wrapper .inner .story .imgs .img {
+        height: calc(var(--gap) * 10);
+    }
+    .section-1 .wrapper .inner .story .imgs .img.main {
+        height: calc(var(--gap) * 18);
+    }
+}
+
+@media (max-width: 400px) {
+    .section-1 .wrapper .inner .story .imgs .img {
+        height: calc(var(--gap) * 7);
+    }
+    .section-1 .wrapper .inner .story .imgs .img.main {
+        height: calc(var(--gap) * 14);
+    }
+}

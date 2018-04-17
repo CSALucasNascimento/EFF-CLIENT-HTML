@@ -1,16 +1,17 @@
 :root {
     --lighter-color:rgba(255,255,255,1);
-    --light-color:rgba(245,245,245,1);
+    --light-color:rgba(235,235,235,1);
     --dark-color:rgba(191,191,191,1);
     --darker-color:rgba(0,0,0,1);
-    --font: 'CenturyGothicRegular', sans-serif;
+    --font-regular: 'CenturyGothicRegular', sans-serif;
+    --font-bold: 'CenturyGothicBold', sans-serif;
     --gap: 30px;
     --width-wrapper: minmax(auto, 1170px);
 }
 
 * {
     box-sizing: border-box;
-    font-family: var(--font) !important;
+    font-family: var(--font-regular);
     margin: 0;
     padding: 0;
 }
@@ -21,31 +22,57 @@
 
 html, body {
     box-sizing: border-box;
-    font-family: var(--font);
+    font-family: var(--font-regular);
     font-size: 10pt;
     font-weight: normal;
     letter-spacing: 1pt;
 }
 
-h1 {font-size: 20pt}
-h2 {font-size: 15pt}
-h3 {font-size: 13pt}
-
-
-a {
-    text-decoration: none;
-}
-
-.w3-button {
+.w3-button, .w3-btn {
+    padding: calc(var(--gap) / 4);
+    text-transform: uppercase;
     width: fit-content;
 }
 
-.w3-button.btn-primary {
-    text-transform: uppercase;
+.w3-block {
+    width: 100%;
 }
 
-.w3-button.btn-primary.btn-supper {
-    padding: auto 10px;
+.w3-btn-accordion {
+    background-color: var(--light-color);
+}
+
+.w3-button.btn-supper {
+    padding: calc(var(--gap) / 4) calc(var(--gap) * 1.5);
+}
+
+input, select, textarea {
+    border: 1px solid var(--light-color);
+    height: 30px;
+    line-height: calc(30px / 2);
+    padding: calc(var(--gap) / 4);
+    width: 100%;
+}
+
+textarea {
+    height: calc(var(--gap) * 7);
+}
+
+select {
+    background-color: var(--lighter-color);
+    border-radius: 0;
+    position: relative;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: var(--lighter-color) url('../images/icons/angle-down.svg') 96% / 15% no-repeat;
+    background-size: 2%;
+}
+
+select > option {
+    border: 1px solid var(--light-color);
+    background-color: var(--lighter-color);
+    position: absolute;
+    z-index: 1;
 }
 
 @media (max-width: 1800px) { 

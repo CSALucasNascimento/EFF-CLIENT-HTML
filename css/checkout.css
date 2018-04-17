@@ -1,0 +1,201 @@
+.wrapper .inner form label {
+    display: block;
+}
+
+.wrapper .inner form input {
+    width: 100%;
+}
+
+/**
+*
+* SECTION 1
+*
+**/
+.section-1 {
+    padding: calc(var(--gap) * 2) 0;
+}
+
+.section-1 .wrapper .inner .w3-card-form {
+    grid-column: 3 / 11;
+    border-radius: calc(var(--gap) / 4);
+}
+
+.section-1 .wrapper .inner .w3-card .w3-card-body {
+    display: grid;
+    grid-gap: var(--gap);
+    grid-template-areas:
+    'required required required required required required'
+    'frm-email frm-email frm-email frm-email frm-phone frm-phone'
+    'frm-first-name frm-first-name frm-first-name frm-last-name frm-last-name frm-last-name'
+    'frm-delivery-address frm-delivery-address frm-delivery-address frm-delivery-address frm-delivery-address frm-delivery-address'
+    'frm-suburb frm-suburb frm-suburb frm-suburb frm-suburb frm-suburb'
+    'frm-city frm-city frm-state frm-state frm-postcode frm-postcode'
+    'company-name company-name company-name company-name company-name company-name'
+    'delivery-instructions delivery-instructions delivery-instructions delivery-instructions delivery-instructions delivery-instructions';
+}
+
+.section-1 .wrapper .inner .w3-card small {
+    grid-area: required
+}
+
+.section-1 .wrapper .inner .w3-card .frm-email {
+    grid-area: frm-email
+}
+
+.section-1 .wrapper .inner .w3-card .frm-phone {
+    grid-area: frm-phone
+}
+
+.section-1 .wrapper .inner .w3-card .frm-first-name {
+    grid-area: frm-first-name
+}
+
+.section-1 .wrapper .inner .w3-card .frm-last-name {
+    grid-area: frm-last-name
+}
+
+.section-1 .wrapper .inner .w3-card .frm-delivery-address {
+    grid-area: frm-delivery-address
+}
+
+.section-1 .wrapper .inner .w3-card .frm-suburb {
+    grid-area: frm-suburb
+}
+
+.section-1 .wrapper .inner .w3-card .frm-city {
+    grid-area: frm-city
+}
+
+.section-1 .wrapper .inner .w3-card .frm-state {
+    grid-area: frm-state
+}
+
+.section-1 .wrapper .inner .w3-card .frm-postcode {
+    grid-area: frm-postcode
+}
+
+.section-1 .wrapper .inner .w3-card .company-name {
+    grid-area: company-name
+}
+
+.section-1 .wrapper .inner .w3-card .delivery-instructions {
+    grid-area: delivery-instructions
+}
+
+.section-1 .wrapper .inner .w3-card .w3-card-footer {
+    display: grid;
+    justify-content: end;
+}
+
+
+/**
+*
+* SECTION 2
+*
+**/
+.section-2 {
+    padding: calc(var(--gap) * 2) 0;
+}
+
+.section-2 .wrapper .inner .w3-card {
+    grid-column: 3 / 11;
+    border-radius: calc(var(--gap) / 4);
+}
+
+.section-2 .wrapper .inner .w3-card .w3-card-body {
+    display: grid;
+    grid-gap: var(--gap);
+    grid-template-areas:
+    'required required required required required required'
+    'frm-card-holder-name frm-card-holder-name frm-card-holder-name frm-card-holder-name frm-card-holder-name frm-card-holder-name'
+    'frm-card-number frm-card-number frm-card-number frm-card-number frm-card-number frm-card-number'
+    'frm-expire-date frm-expire-date frm-expire-date frm-ccv frm-ccv frm-ccv';
+}
+
+.section-2 .wrapper .inner .w3-card .w3-card-body .frm-card-holder-name {
+    grid-area: frm-card-holder-name
+}
+
+.section-2 .wrapper .inner .w3-card .w3-card-body .frm-card-number {
+    grid-area: frm-card-number
+}
+
+.section-2 .wrapper .inner .w3-card .w3-card-body .frm-expire-date {
+    grid-area: frm-expire-date
+}
+
+.section-2 .wrapper .inner .w3-card .w3-card-body .frm-ccv {
+    grid-area: frm-ccv
+}
+
+.section-2 .wrapper .inner .w3-card .w3-card-footer {
+    display: grid;
+    justify-content: end;
+}
+
+
+/**
+*
+* SECTION 3
+*
+**/
+.section-3 {
+    padding: calc(var(--gap) * 2) 0;
+}
+
+.section-3 .wrapper .inner .w3-card {
+    grid-column: 3 / 11;
+    border-radius: calc(var(--gap) / 4);
+}
+
+.section-3 .wrapper .inner .w3-card .w3-card-body {
+    display: grid;
+    grid-gap: var(--gap);
+    grid-template-areas:
+    'congrats congrats congrats delivery-date delivery-date delivery-date'
+    '. . . . . btn-submit'
+}
+
+.section-3 .wrapper .inner .w3-card .w3-card-body .congrats {
+    grid-area: congrats;
+    display: grid;
+    grid-row-gap: calc(var(--gap) / 4);
+}
+
+.section-3 .wrapper .inner .w3-card .w3-card-body .delivery-date {
+    grid-area: delivery-date;
+    display: grid;
+    justify-items: end;
+}
+
+.section-3 .wrapper .inner .w3-card .w3-card-body .delivery-date h1 {
+    background: var(--dark-color);
+    border-radius: 5px;
+    padding: calc(var(--gap));
+    width: fit-content;
+}
+
+.section-3 .wrapper .inner .w3-card .w3-card-footer {
+    display: grid;
+    justify-content: end;
+}
+
+@media (max-width: 600px) {
+    .section-1 .wrapper .inner {
+        grid-template-areas: 
+        '. title title title title title title title title title title .'
+        '. user-details user-details user-details user-details user-details user-details user-details user-details user-details user-details .'
+    }
+
+    .section-2 .wrapper .inner {
+        grid-template-areas: 
+        '. title title title title title title title title title title .'
+        '. payment payment payment payment payment payment payment payment payment payment .'
+    }
+
+    .section-3 .wrapper .inner {
+        grid-template-areas: 
+        '. title title title title title title title title title title .'
+        '. confirmation confirmation confirmation confirmation confirmation confirmation confirmation confirmation confirmation confirmation .'
+    }
+}
